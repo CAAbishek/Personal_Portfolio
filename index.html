@@ -4,8 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abishek C A | DevOps & Cloud Engineer</title>
+    <!-- Add these lines in the head section after line 6 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+    <link rel="preload" href="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" as="script">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <style>
         :root {
             --primary: #0066ff;
@@ -796,7 +802,7 @@
                 <div class="hologram-container">
                     <div class="hologram" id="hologram">
                         <!-- Replace with your actual image URL -->
-                        <img src="/IMG_5834.JPG" alt="Abishek C A" class="hologram-img">
+                        <img src="/IMG_5834.JPG" alt="Abishek C A" class="hologram-img" width="300" height="300">
                         <div class="hologram-effect"></div>
                     </div>
                 </div>
@@ -1047,7 +1053,7 @@
     </div>
 
     <script>
-        // Particles.js configuration
+    // Particles.js configuration
         particlesJS('particles-js', {
             particles: {
                 number: { value: 100, density: { enable: true, value_area: 800 } },
@@ -1082,12 +1088,6 @@
             },
             retina_detect: true
         });
-
-        // Visitor counter
-        let count = localStorage.getItem('visitorCount') || 0;
-        count++;
-        localStorage.setItem('visitorCount', count);
-        document.getElementById('visitor-count').textContent = count;
 
         // 3D tilt effect for hologram
         const hologram = document.getElementById('hologram');
@@ -1150,4 +1150,4 @@
         document.getElementById('mobileNavToggle').addEventListener('click', toggleMobileNav);
     </script>
 </body>
-</html>
+</html> 
